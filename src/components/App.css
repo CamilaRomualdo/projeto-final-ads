@@ -1,0 +1,207 @@
+html, body, #root {
+  background-color: #FFE53B;
+  background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+  height: 100%;
+  overflow: hidden;
+}
+
+.app {
+  height: 100%;
+  margin-left: 3px !important;
+  margin-right: 3px !important;
+}
+
+.iconRoute {
+  color: white;
+  cursor: pointer;
+  position: fixed !important;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+  margin-left: 8px !important;
+}
+
+.link:hover {
+  color: lightsalmon;
+}
+
+.menu {
+  padding-bottom: 2em;
+}
+
+.flag-br {
+  bottom: 1em;
+  cursor: pointer;
+  margin-left: 69px !important;
+  position: fixed !important;
+}
+
+.flag-es {
+  bottom: 1em;
+  cursor: pointer;
+  margin-left: 99px !important;
+  position: fixed !important;
+}
+
+.flag-us {
+  bottom: 1em;
+  cursor: pointer;
+  margin-left: 129px !important;
+  position: fixed !important;
+}
+
+.dropDown {
+  margin-left: -10px !important;
+}
+
+.line {
+  margin-left: 39px !important;
+  margin-right: 39px !important;
+  margin-bottom: 39px !important;
+}
+
+.messages {
+  height: 20.9em;
+  overflow-y: scroll;
+}
+
+.messageForm {
+  bottom: 1em;
+  left: 0;
+  margin-left: 326px !important;
+  margin-bottom: 1em;
+  position: fixed !important;
+  right: 1em;
+}
+
+.emojiPicker {
+  position: absolute;
+}
+
+.messageSelf {
+  border-left: 3px solid orange;
+  padding-left: 9px;
+}
+
+.messageImage {
+  padding: 2em;
+}
+
+.progressBar {
+  margin: 0.3em 0 0 0 !important;
+}
+
+.typing {
+  background: #e6e6e6;
+  border-radius: 20px;
+  height: 2em;
+  margin-left: 5px;
+  padding: 10px;
+  position: relative;
+  width: 5em;
+}
+
+.typingDot {
+  animation: loadingFade 1s infinite;
+  background: #8d8c91;
+  border-radius: 50%;
+  float: left;
+  height: 8px;
+  margin: 0 4px;
+  opacity: 0;
+  width: 8px;
+}
+
+.typingDot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.typingDot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.typingDot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.typingUser {
+  font-style: italic;
+  font-weight: bold;
+  margin-right: 3px;
+}
+
+@keyframes loadingFade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.skeleton {
+  height: 40px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skeleton::after {
+  animation: sweep 2s infinite;
+  background-image: linear-gradient(to left, transparent, rgba(255, 255, 255, 0.4), transparent);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50%;
+}
+
+.skeletonAvatar {
+  background-color: rgba(58, 57, 57, 0.3);
+  border-radius: 3px;
+  height: 35px;
+  width: 35px;
+}
+
+.skeletonAuthor {
+  background-color: rgba(58, 57, 57, 0.3);
+  border-radius: 3px;
+  bottom: 30px;
+  height: 10px;
+  left: 40px;
+  position: absolute;
+  right: 0;
+  width: 120px;
+
+}
+
+.skeletonDetails {
+  background-color: rgba(58, 57, 57, 0.3);
+  border-radius: 3px;
+  bottom: 5px;
+  height: 20px;
+  left: 40px;
+  position: absolute;
+  right: 20px;
+}
+
+@keyframes sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(150%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
